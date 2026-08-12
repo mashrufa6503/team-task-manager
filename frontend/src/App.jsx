@@ -51,7 +51,7 @@ function App() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-          "http://localhost:5000/api/dashboard",
+          " https://team-task-manager-p6sl.onrender.com/api/dashboard",
           {
             headers: {
               Authorization: `Bearer ${token}`,

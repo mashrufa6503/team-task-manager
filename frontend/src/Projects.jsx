@@ -14,7 +14,7 @@ function Projects({ onProjectsLoaded, user }) {
   const getProjects = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/projects",
+        " https://team-task-manager-p6sl.onrender.com/api/projects",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -60,7 +60,7 @@ function Projects({ onProjectsLoaded, user }) {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/projects",
+        " https://team-task-manager-p6sl.onrender.com/api/projects",
         {
           method: "POST",
           headers: {
@@ -107,7 +107,7 @@ function Projects({ onProjectsLoaded, user }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/projects/${projectId}/members`,
+        ` https://team-task-manager-p6sl.onrender.com/api/projects/${projectId}/members`,
         {
           method: "POST",
           headers: {

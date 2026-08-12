@@ -17,7 +17,7 @@ function Tasks({ projects, user }) {
   const getTasks = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/tasks",
+        " https://team-task-manager-p6sl.onrender.com/api/tasks",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ function Tasks({ projects, user }) {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/tasks",
+        " https://team-task-manager-p6sl.onrender.com/api/tasks",
         {
           method: "POST",
           headers: {
@@ -99,7 +99,7 @@ function Tasks({ projects, user }) {
   const updateStatus = async (taskId, status) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/tasks/${taskId}/status`,
+        ` https://team-task-manager-p6sl.onrender.com/api/tasks/${taskId}/status`,
         {
           method: "PUT",
           headers: {
